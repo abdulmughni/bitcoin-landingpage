@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bitcoins Sale</title>
+
+<style type="text/css">
+
+@font-face {
+	font-family: 'GothamBook';
+	src: url('fonts/GothamBook.eot');
+	src: local('GothamBook'), url('fonts/GothamBook.woff') format('woff'), url('fonts/GothamBook.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_10146">Text with this font applied</p> */
+.fontsforweb_fontid_10146 {
+	font-family: 'GothamBook' !important;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffffff;
+	font-family: 'GothamBook';
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  line-height: 1.42857143;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+  outline: 0px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+
+@media (min-width: 768px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }  
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }  
+}
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }  
+}
+
+
+.main-section {
+	width: 100%;
+	float: left;
+}
+.logo, .buy-btn {
+	padding: 20px 40px;
+}
+.buy-btn a {
+	background-color: #c99119;
+	color: #ffffff;
+	padding:7px 22px;
+	border-radius: 7px;
+	font-size: 17px;
+}
+.buy-btn a:hover {
+	background-color: #000;
+}
+.about-caption .buy-btn a:hover {
+	background-color: #000;
+}
+.about-limited .buy-btn a:hover {
+	background-color: #c99119;
+}
+.buy-btn img {
+	    vertical-align: text-bottom;
+	    max-width: 18px;
+	    margin-left: 5px;
+}
+.main-section .buy-btn a {
+	float: right;
+}
+.banner {
+	background-image: url(images/banner.jpg);
+    width: 100%;
+    float: left;
+    padding-top: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-caption {
+	text-align: center;
+}
+.banner-caption h1 {
+	color: #c99119;
+    font-size: 46px;
+    font-weight: 900;
+    margin-bottom: 0px;
+
+}
+.banner-caption p {
+	color: #ffffff;
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+.banner-caption span {
+	display: block;
+	color: #1165c9;
+	font-size: 22px;
+	margin-bottom: 20px;
+	font-weight: 600px;
+}
+.banner-caption img {
+	margin-bottom: -13px;
+}
+.banner-coins img {
+	width: 70%;
+}
+.countdown img {
+	width: 38%;
+}
+.chose-countdown {
+	text-align: right;
+}
+.chose-countdown img {
+	width: 70%;
+}
+.countdown {
+	width: 100%;
+	float: left;
+	margin-bottom: 50px;
+}
+.quality-section {
+	width: 100%;
+    float: left;
+    background-color: #e9e9e9;
+    padding: 40px 0px 25px;
+}
+.quality-section .border-none {
+	border: none;
+}
+.footer-top .border-none {
+	border: none !important;
+}
+.about-image img {
+	width: 100%;
+    border: 10px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px #999;
+}
+.quality-sec {
+	text-align: center;
+	border-right: 2px solid #cccccc;
+}
+.quality-sec img {
+	max-width: 55px;
+}
+.quality-sec h3 {
+	font-size: 17px;
+    font-weight: 600;
+}
+.about-section {
+	width: 100%;
+	float: left;
+	padding: 50px 0px;
+}
+.about-caption {
+	text-align: left;
+    width: 100%;
+    float: left;
+    padding: 25px 3px;
+}
+.about-caption h2 {
+   text-transform: uppercase;
+    color: #c99119;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+.about-caption p {
+	color: #000;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.about-caption .buy-btn {
+	padding:30px 0 0 ;
+}
+.about-caption .buy-btn a img {
+	max-width: 20px;
+}
+.about-caption .buy-btn a {
+	background-color: #c99119;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.about-limited .buy-btn a {
+	background-color: #000;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+.about-limited {
+	text-align: center;
+    padding: 5px 70px;
+}
+.about-limited img {
+	max-width: 80%;
+}
+.about-limited ul {
+	width: 100%;
+    padding: 15px 0;
+    margin: 0px;
+}
+.about-limited li {
+	text-align: left;
+	font-size: 17px;
+    font-weight: 600;
+}
+.banner-2 {
+	background-image: url(images/banner-2.jpg);
+    background-repeat: no-repeat;
+    padding: 9% 0% 8%;
+    width: 100%;
+    float: left;
+    background-size: cover;
+}
+.banner-caption-2 {
+	background-color: rgba(0,0,0,0.7);
+	border: 10px solid;
+	border-color: rgba(204,204,204,0.9);
+	border-radius: 10px;
+	    padding: 25px 10px 25px;
+	    max-width: 55%;
+    margin: auto;
+}
+.banner-caption-2 h2:nth-child(1) {
+	border-bottom: 2px solid #646154;
+	padding-bottom: 20px;
+}
+.banner-caption-2 h2 {
+	text-transform: uppercase;
+    color: #aaaaaa;
+    padding: 0 30px;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+.banner-caption-2 h2 span {
+	float: right;
+
+}
+.free-shipping h3 {
+	color: #939393;
+    font-size: 18px;
+    margin: 0px;
+    padding: 9px 0;
+}
+.free-shipping h3 span {
+	color: #b78416;
+	padding: 0 5px 0 10px;
+
+}
+.free-shipping h3 img {
+	max-width: 50px;
+    vertical-align: baseline;
+}
+.free-shipping {
+	background-color: #000;
+	border-radius: 30px;
+	padding: 5px;
+	margin:0 30px;
+	text-align: center;
+	margin-top: 60px;
+	box-shadow: 0px 0px 15px 0px #b78416;
+
+}
+.chose-section {
+	width: 100%;
+	float: left;
+	padding:40px 0;
+}
+.chose-title h1 {
+	color: #b78416;
+	font-weight: 900;
+	font-size: 40px;
+	margin-bottom: 0px;
+}
+.chose-title p {
+	color: #000;
+    font-size: 17px;
+    font-weight: 600;
+}
+.chose-coin-sec {
+	width: 100%;
+	float: left;
+	padding: 2% 0% 5%;
+}
+.chose-coins {
+	width: 100%;
+	padding: 10px 20px 0px;
+	background-color: #fbfbfb;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px #cccccc;
+}
+.coins-quantity {
+	position: relative;
+}
+.coins-quantity h1 {
+	text-align: right;
+	margin: 0px;
+}
+.coins-iamge {
+	text-align: center;
+}
+.best-value {
+	    position: absolute;
+    background-color: #1164c8;
+    color: #ffffff;
+    font-size: 16px;
+    top: -13px;
+    padding: 5px 15px;
+    border-radius: 0px 0px 8px 8px;
+    left: 29%;
+
+}
+.payment-section {
+	width: 100%;
+	float: left;
+	padding: 30px 0;
+	text-align: center;
+}
+.payment-section img {
+	min-width: 130px;
+}
+.payment-section ul {
+	margin: 0px;
+	padding: 0px;
+}
+.payment-section ul li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+.footer-top {
+	width: 100%;
+	float: left;
+	background-color: #0c182b;
+	padding: 20px 0px;
+}
+.footer-top .quality-sec {
+	border-right: 2px solid #1c3359;
+    width: 100%;
+    float: left;
+}
+.footer-top .quality-sec img {
+	float: left;
+	margin-right: 10px;
+	max-width: 55px;
+
+}
+.footer-top .quality-sec h3 {
+	float: left;
+	font-size: 17px;
+	color: #ffffff;
+	text-align: left;
+	margin: 9px 0 0;
+}
+footer {
+	width: 100%;
+	float: left;
+	background-color: #050b14;
+}
+.footer-review {
+	width: 80%;
+    margin: auto;
+    margin-bottom: 45px;
+    padding: 50px 5px 25px;
+    border-bottom: 1px solid #192a44;
+}
+.footer-review span {
+	color: #a2a2a2;
+	font-size: 32px;
+}
+.footer-review img {
+	float: right;
+}
+.footer-review-person {
+	width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #192a44;
+}
+.footer-review-person .col-md-4 {
+    width: 33%;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.footer-single-review {
+	padding-bottom: 20px;
+    min-height: 130px;
+}
+.footer-single-review h2 {
+	color: #ffffff;
+	font-size: 23px;
+}
+.footer-single-review p {
+	color: #ffffff;
+	    font-size: 16px;
+}
+.footer-single-review span {
+	color: #a2a2a2;
+	font-size: 13px;
+}
+.footer-bottom {
+	width: 100%;
+	float: left;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.footer-bottom img  {
+	margin-bottom: 40px;
+}
+.footer-info {
+	margin-bottom: 60px;
+}
+.footer-info p {
+	color: #9c9c9c;
+	margin: 0px;
+	font-size: 18px;
+}
+.footer-bottom ul {
+	margin: 0px;
+  padding:  0px;
+}
+.footer-bottom ul li {
+	list-style: none;
+	display: inline-block;
+}
+.footer-bottom ul li a {
+	color: #9c9c9c;
+	font-size: 16px;
+	padding: 0 10px;
+	border-right: 1px solid #9c9c9c;
+}
+.footer-bottom ul li:nth-child(3) a {
+	border:none;
+}
+
+/*************************** MEDIA QUERY ***********************************/
+@media only screen and (max-width: 992px) {
+	.mob-border-hide {border: none !important;}
+	.about-section .container {width: 100%;}
+	.about-padding { padding-bottom: 0px; }
+	.banner-caption-2  {max-width: 90%;}
+	.chose-title {text-align: center;}
+	.chose-countdown {text-align: center; padding-bottom: 30px;}
+	.chose-coins {margin-bottom: 25px;}
+	.best-value {left: 42%}
+	.footer-top .quality-sec {margin-bottom: 25px;}
+	.footer-top {padding: 20px 0px 0;}
+	.footer-top .quality-sec img {max-width: 40px;}
+	.footer-top .quality-sec h3 {      font-size: 14px; margin: 6px 0 0; font-weight: 100;}
+}
+@media only screen and (max-width: 768px) {
+	.banner-caption-2  {max-width: 100%; padding: 0 10px; }
+	.banner-caption-2 h2 {font-size: 20px; padding: 0 10px; margin: 10px 0;}
+	.banner-caption-2 h2:nth-child(1) { padding-bottom: 8px; margin-top: 20px}
+	.free-shipping {margin: 35px 0 20px;}
+	.banner-caption-2 {border: 6px solid; border-color: rgba(204,204,204,0.9);}
+	.free-shipping h3 {font-size: 13px;}
+	.free-shipping h3 img {max-width:35px; }
+	.banner-2 {padding: 11% 0% 10%;}
+	.chose-title h1 {font-size: 35px;}
+	.chose-title p {font-size: 15px;}
+	.chose-section {padding: 5px 0px;}
+	.best-value {left: 32%}
+	.payment-section img {max-width: 75px; min-width: 75px;}
+	.payment-section {padding: 20px 0;}
+	.payment-section ul li {margin-bottom: 10px;}
+	.footer-top .quality-sec h3 {      font-size: 12px;}
+	.footer-top .quality-sec img {margin-right: 5px;}
+	.footer-review {text-align: center;}
+	.footer-review img {float: none;}
+	.footer-review {border: none; padding: 35px 5px 0px;}
+	.footer-review span { font-size: 28px;}
+	.footer-review-person {width: 95%}
+	.footer-single-review {min-height: auto;}
+	.footer-bottom img {max-width: 260px;}
+	.footer-info p {font-size: 10px;     padding: 0 4px;}
+	.quality-sec h3 {font-size: 13px;}
+	.banner-caption h1 {font-size: 40px;}
+	.banner-caption p {font-size: 18px;}
+	.countdown img,.banner-coins img {width: 90%;}
+	.logo, .buy-btn { padding: 20px 0px;} 
+	.buy-btn a { padding: 7px 15px; font-size: 14px; }
+	.logo img {width: 100%;}
+	.about-limited { padding: 15px 25px; }
+	.footer-review-person .col-md-4 { width: 100%; }
+}
+    </style>
+  </head>
+  <body>
+	<div class="main-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<div class="logo">
+						<a href="#"><img src="images/logo-1.png" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<div class="buy-btn">
+						<a href="#">BUY NOW <img src="images/shop-icon.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner-caption">
+						<h1>The Real Bitcoins Are Here!</h1>
+						<p>Gold plated coin for crypto-enthusiast</p>
+						<span>On Sale Now.</span>
+						<div class="countdown"> 
+							<img src="images/topcountdown.gif" alt="">
+						</div>
+						<div class="banner-coins">
+							<img src="images/bitcoins.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="quality-section">
+		<div class="container-fluid">
+        	<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec">
+						<img src="images/plane.png" alt="">
+						<h3>FREE SHIPPING<br>WORLDWIDE</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec mob-border-hide">
+						<img src="images/refresh.png" alt="">
+						<h3>FREE RETURNS<br>WORLDWIDE</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec">
+						<img src="images/tick.png" alt="">
+						<h3>HIGH QUALITY<br>PRODUCT</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec border-none">
+						<img src="images/sheild.png" alt="">
+						<h3>100% SAFE & SECURE<br>CHECKOUT</h3>
+					</div>	
+				</div>
+        	</div>
+		</div>
+	</div>
+
+	<div class="about-section about-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="about-image">
+						<img src="images/about-left.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="about-caption">
+						<h2>tangible coin that <br>shines like pure gold</h2>
+						<p>All of the 1 oz Proof Bitcoin Commemorative Rounds 
+						have a mirrored finish to the design’s background field, 
+						enhancing the visual beauty of each piece.
+						</p>
+						<div class="buy-btn">
+							<a href="#">BUY NOW <img src="images/shop-icon.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-push-6">
+					<div class="about-image">
+						<img src="images/about-right.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<div class="about-caption about-limited">
+						<img src="images/limited.png" alt="">
+						<ul>
+							<li>A must-have for every crypto-enthusiast</li>
+							<li>Arrives in a capsule.</li>
+							<li>Based on original design!</li>
+							<li>Well crafted tangible coin</li>
+						</ul>
+						<div class="buy-btn">
+							<a href="#">BUY NOW <img src="images/shop-icon.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="banner-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner-caption-2">
+						<h2>Diameter<span>38mm</span></h2>
+						<h2>thickness<span>3mm</span></h2>
+						<div class="free-shipping">
+							<h3><img src="images/ship-plane.png" alt=""><span>FREE</span>WORLD WIDE SHIPPING INCLUDED</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="chose-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="chose-title">
+						<h1>CHOOSE OPTION</h1>
+						<p>*LIMITED QUANTITY AVAILABLE</p>
+					</div>	
+				</div>
+				<div class="col-md-6">
+					<div class="chose-countdown">
+						<img src="images/bottomcountdown.gif">
+					</div>
+				</div>	
+
+			</div>
+		</div>
+	</div>
+
+	<div class="chose-coin-sec">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="chose-coins">
+						 <div class="coins-quantity">
+						 	<h1>x1</h1>
+						 </div>
+						 <div class="coins-iamge">
+						 	<img src="images/coin-1.png">
+						 </div>
+					</div>
+				</div>		
+				<div class="col-md-4">
+					<div class="chose-coins">
+						 <div class="coins-quantity">
+						 	<h1>x3</h1>
+						 </div>
+						 <div class="coins-iamge">
+						 	<img src="images/coin-3.png">
+						 </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="chose-coins">
+						 <div class="coins-quantity">
+						 	<h1>x7</h1>
+						 	<span class="best-value">BEST VALUE</span>
+						 </div>
+						 <div class="coins-iamge">
+						 	<img src="images/coin-7.png">
+						 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="payment-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+						<ul>
+							<li><img src="images/pay-1.png"></li>
+							<li><img src="images/pay-2.png"></li>
+							<li><img src="images/pay-3.png"></li>
+							<li><img src="images/pay-4.png"></li>
+							<li><img src="images/pay-5.png"></li>
+							<li><img src="images/pay-6.png"></li>
+							<li><img src="images/pay-7.png"></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-top">
+		<div class="container">
+        	<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec">
+						<img src="images/plane-1.png" alt="">
+						<h3>FREE SHIPPING<br>WORLDWIDE</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec mob-border-hide">
+						<img src="images/refresh-1.png" alt="">
+						<h3>FREE SHIPPING<br>WORLDWIDE</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec">
+						<img src="images/tick-1.png" alt="">
+						<h3>HIGH QUALITY<br>PRODUCT</h3>
+					</div>	
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="quality-sec border-none">
+						<img src="images/sheild-1.png" alt="">
+						<h3>100% SAFE & SECURE<br>CHECKOUT</h3>
+					</div>	
+				</div>
+        	</div>
+		</div>
+	</div>
+
+    <footer>
+    	<div class="footer-review">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-6 col-md-push-6">
+    					<img src="images/review-star.png">
+    				</div>
+    				<div class="col-md-6 col-md-pull-6">
+    					<span>9 REVIEWS</span>
+    				</div>		
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer-review-person">
+    		<div class="container-fluid">
+    			<div class="row">
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Elias B. <img src="images/review-single.png"></h2>
+    						<p>Very satisfied with this order, highly recommend OnDeckOutlet.</p>
+    						<span>Seattle • JAN 1sT, 2018</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Andrew <img src="images/review-single.png"></h2>
+    						<p>Amazing product, high quality very satisfied with this bitcoin. definitely will buy more. highly recommended.</p>
+    						<span>Toronto, Ontario • JAN 2ND, 2018</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Jeff G. <img src="images/review-single.png"></h2>
+    						<p>excellent quality a very good Price, seller recommend, 
+							very fast arrive to Vegas
+							</p>
+    						<span>LAS VEGAS, Nevada • DEC 19TH, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Maria <img src="images/review-single.png"></h2>
+    						<p>Fast Shipping Great Quality, Love it !</p>
+    						<span>Toronto, Ontario • Nov 19TH, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Jackson M. <img src="images/review-single.png"></h2>
+    						<p>This bitcoin is truly amazing, I keep this in my pocket all the time. Thank you ONDECK!!</p>
+    						<span>LAS VEGAS, Nevada • Nov 17TH, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Emily Davis <img src="images/review-single.png"></h2>
+    						<p>You knocked it out of the park. Again.</p>
+    						<span>Columbus, Ohio • Nov 4th, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Kristina D. <img src="images/review-single.png"></h2>
+    						<p>Very beautiful coin, the attention to detail is stunning.</p>
+    						<span>Ronkonkoma, New York • Oct 29th, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Greg M. <img src="images/review-single.png"></h2>
+    						<p>If you trade bitcoins, you must have this physica coin.</p>
+    						<span>Bellevue, Nebraska • Oct 28th, 2017</span>
+    					</div>
+    				</div>
+    				<div class="col-md-4">
+    					<div class="footer-single-review">
+    						<h2>Liam Baynes <img src="images/review-single.png"></h2>
+    						<p>The coins look great, feel great, and are really worth getting.</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="footer-bottom">
+	    	<div class="container-fluid">
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<img src="images/footer-logo.png">
+	    				<div class="footer-info">
+	    					<p>general@merchinside.com</p>
+							<p>Call Toll-Free</p>
+							<p>+1 (855) 521-4970</p>
+							<p>M-T 8:30-2 pm & F 9-1 pm PST</p>			
+	    				</div>
+	    				<ul>
+	    					<li><a href="#">TERMS & CONDITIONS</a></li>
+	    					<li><a href="#">PRIVACY POLICY</a></li>
+	    					<li><a href="#">© 2018 ONDEKC OUTLET</a></li>
+	    				</ul>
+	    			</div>
+	    		</div>
+	    	</div>
+    	</div>
+    </footer>
+   </body>
+</html>
